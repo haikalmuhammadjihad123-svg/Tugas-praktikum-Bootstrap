@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata Purwakarta | Jelajahi Destinasi Lokal</title>
+
+    <!-- Bootstrap 5 via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
+      <div class="container">
+        <a class="navbar-brand" href="#beranda">Wisata Purwakarta</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuUtama"
+          aria-controls="menuUtama"
+          aria-expanded="false"
+          aria-label="Buka menu navigasi"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuUtama">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destinasi">Destinasi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Beranda -->
+      <header id="beranda" class="hero">
+        <div class="container">
+          <div class="row align-items-center gy-5 gx-lg-5">
+            <div class="col-lg-5">
+              <!-- Latihan 1: judul menggunakan tag heading -->
+              <h1 class="hero-judul">
+                Wisata Purwakarta
+                <small>Jelajahi Keindahan Kota dan Alamnya</small>
+              </h1>
+              <p class="hero-teks">
+                Dari air mancur di pusat kota sampai tepi waduk dan hutan
+                pinus, Purwakarta punya banyak tempat untuk dikunjungi.
+              </p>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="#destinasi" class="btn btn-light btn-lg">Lihat destinasi</a>
+                <a href="#kontak" class="btn btn-outline-light btn-lg">Tanya saya</a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <figure class="hero-foto mb-0">
+                <img
+                  src="images/air-mancur-sribaduga.png"
+                  class="img-fluid"
+                  width="1025"
+                  height="561"
+                  alt="Pertunjukan air mancur Sri Baduga di malam hari dengan cahaya ungu, biru, dan laser warna-warni"
+                />
+                <figcaption>
+                  <strong>Air Mancur Sri Baduga.</strong> Pertunjukan air,
+                  lampu, dan laser di pusat kota Purwakarta. Cek jadwal
+                  pertunjukannya sebelum berkunjung.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Tentang -->
+      <section id="tentang" class="bagian">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-5">
+              <h2 class="judul-bagian">Tentang Wisata Purwakarta</h2>
+            </div>
+            <div class="col-md-7">
+              <p>
+                Wisata Purwakarta adalah halaman informasi sederhana yang
+                memperkenalkan beragam destinasi menarik di Kabupaten
+                Purwakarta, mulai dari wisata alam, kawasan waduk, hingga
+                tempat rekreasi yang cocok dikunjungi bersama keluarga maupun
+                teman.
+              </p>
+              <p class="mb-0">
+                Melalui halaman ini, pengunjung dapat mengenal beberapa
+                destinasi seperti Parang Gombong, Ujung Aspal, dan Waduk
+                Jatiluhur, sekaligus memperoleh gambaran singkat tentang daya
+                tarik setiap tempat. Website ini dibuat agar informasi wisata
+                Purwakarta dapat ditemukan dengan mudah dalam tampilan yang
+                sederhana dan responsif.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destinasi -->
+      <section id="destinasi" class="bagian bagian-alt">
+        <div class="container">
+          <h2 class="judul-bagian">Destinasi</h2>
+          <p class="pengantar">
+            Tiga tempat di sekitar Waduk Jatiluhur dan perbukitan Purwakarta.
+          </p>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="card h-100 tempat tempat-padang">
+                <img
+                  src="images/parang-gombong.png"
+                  class="card-img-top"
+                  width="707"
+                  height="498"
+                  loading="lazy"
+                  alt="Padang rumput dengan pagar kayu di tepi waduk, tenda merah, dan perbukitan di kejauhan"
+                />
+                <div class="card-body">
+                  <h3 class="card-title h5">Parang Gombong</h3>
+                  <p class="card-text">
+                    Padang rumput di tepi waduk dengan latar perbukitan. Cocok
+                    untuk berkemah dan menikmati langit sore.
+                  </p>
+                </div>
+                <div class="card-footer">Desa Kutamanah, Kecamatan Sukasari</div>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="card h-100 tempat tempat-pinus">
+                <img
+                  src="images/ujung-aspal.png"
+                  class="card-img-top"
+                  width="371"
+                  height="475"
+                  loading="lazy"
+                  alt="Jalan setapak berpaving di antara pohon pinus yang tinggi"
+                />
+                <div class="card-body">
+                  <h3 class="card-title h5">Ujung Aspal</h3>
+                  <p class="card-text">
+                    Jalan setapak di tengah hutan pinus yang sejuk. Banyak
+                    pengunjung datang untuk berjalan santai dan bersantai di
+                    bawah pepohonan.
+                  </p>
+                </div>
+                <div class="card-footer">Wisata alam hutan pinus</div>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="card h-100 tempat tempat-waduk">
+                <img
+                  src="images/waduk-jatiluhur.png"
+                  class="card-img-top"
+                  width="732"
+                  height="482"
+                  loading="lazy"
+                  alt="Tiga perahu berwarna-warni di tepi Waduk Jatiluhur dengan gunung di seberang air"
+                />
+                <div class="card-body">
+                  <h3 class="card-title h5">Waduk Jatiluhur</h3>
+                  <p class="card-text">
+                    Selain mengairi sawah, waduk ini menjadi tujuan wisata
+                    air. Dari tepinya, perahu dan gunung terlihat jelas di
+                    pagi hari.
+                  </p>
+                </div>
+                <div class="card-footer">Kecamatan Jatiluhur</div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form kontak -->
+      <section id="kontak" class="bagian">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-5">
+              <h2 class="judul-bagian">Kontak</h2>
+              <p>
+                Mau tanya rute, usul tempat lain, atau ajak jalan-jalan ke
+                Purwakarta? Tulis pesan di formulir ini.
+              </p>
+            </div>
+
+            <div class="col-md-7">
+              <div id="notifikasi" role="status"></div>
+
+              <form id="formKontak" class="form-kontak" novalidate>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nama"
+                    placeholder="Nama lengkap"
+                    required
+                  />
+                  <div class="invalid-feedback">Isi nama Anda.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="nama@email.com"
+                    required
+                  />
+                  <div class="invalid-feedback">Isi alamat email yang valid.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    rows="4"
+                    placeholder="Tulis pesan Anda"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Isi pesan Anda.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="mb-0">
+          Wisata Purwakarta.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal konfirmasi -->
+    <div
+      class="modal fade"
+      id="modalKonfirmasi"
+      tabindex="-1"
+      aria-labelledby="judulModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="judulModal">Konfirmasi</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body">Apakah Anda yakin ingin mengirim pesan ini?</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Batal
+            </button>
+            <button type="button" class="btn btn-primary" id="tombolYa">
+              Ya, Kirim
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const form = document.getElementById("formKontak");
+      const modalEl = document.getElementById("modalKonfirmasi");
+      const modal = new bootstrap.Modal(modalEl);
+      const notifikasi = document.getElementById("notifikasi");
+
+      // Klik "Kirim Pesan": validasi dulu, lalu tampilkan modal konfirmasi
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        form.classList.add("was-validated");
+        if (form.checkValidity()) {
+          modal.show();
+        }
+      });
+
+      // Klik "Ya, Kirim": tutup modal, tampilkan notifikasi, kosongkan form
+      document.getElementById("tombolYa").addEventListener("click", function () {
+        modal.hide();
+        notifikasi.innerHTML =
+          '<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+          "Pesan terkirim. Terima kasih sudah menghubungi saya." +
+          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>' +
+          "</div>";
+        form.reset();
+        form.classList.remove("was-validated");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+:root {
+  --malam: #1a1440;
+  --malam-terang: #2b2266;
+  --lembayung: #cdbdf0;
+  --danau: #1f6f86;
+  --danau-gelap: #185a6d;
+  --pinus: #2f5d46;
+  --senja: #c9672f;
+  --kabut: #eef3f2;
+  --kabut-alt: #dfe9e7;
+  --tinta: #14201d;
+  --garis: #c3d2ce;
+
+  --bs-primary: var(--danau);
+  --bs-body-bg: var(--kabut);
+  --bs-body-color: var(--tinta);
+  --bs-body-font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bs-body-font-size: 1.0625rem;
+  --bs-body-line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: "Familjen Grotesk", "Segoe UI", sans-serif;
+  letter-spacing: -0.015em;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #ffc93c;
+  outline-offset: 2px;
+}
+
+/* Tombol utama */
+.btn-primary {
+  --bs-btn-bg: var(--danau);
+  --bs-btn-border-color: var(--danau);
+  --bs-btn-hover-bg: var(--danau-gelap);
+  --bs-btn-hover-border-color: var(--danau-gelap);
+  --bs-btn-active-bg: var(--danau-gelap);
+  --bs-btn-active-border-color: var(--danau-gelap);
+  --bs-btn-focus-shadow-rgb: 31, 111, 134;
+}
+
+.btn-light {
+  --bs-btn-color: var(--malam);
+}
+
+.btn-outline-light {
+  --bs-btn-hover-color: var(--malam);
+}
+
+/* Navbar */
+.site-nav {
+  background: var(--malam);
+  border-bottom: 1px solid var(--malam-terang);
+}
+
+.site-nav .navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.site-nav .nav-link {
+  color: var(--lembayung);
+  font-weight: 500;
+  padding-inline: 1rem;
+}
+
+.site-nav .nav-link:hover {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: var(--malam);
+  color: #fff;
+  padding: 4.5rem 0 5rem;
+}
+
+.hero-judul {
+  font-size: clamp(2.5rem, 6.5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.02;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-judul small {
+  display: block;
+  margin-top: 0.85rem;
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--lembayung);
+}
+
+.hero-nama {
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.hero-teks {
+  max-width: 30rem;
+  margin-bottom: 2rem;
+  color: #e4dcf7;
+}
+
+.hero-foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+}
+
+.hero-foto figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--lembayung);
+  max-width: 38rem;
+}
+
+.hero-foto figcaption strong {
+  color: #fff;
+}
+
+/* Bagian umum */
+.bagian {
+  padding: 4.5rem 0;
+}
+
+.bagian-alt {
+  background: var(--kabut-alt);
+  border-block: 1px solid var(--garis);
+}
+
+.judul-bagian {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--tinta);
+}
+
+.pengantar {
+  max-width: 38rem;
+  margin-bottom: 2rem;
+}
+
+/* Card destinasi */
+.tempat {
+  border: 1px solid var(--garis);
+  border-top-width: 5px;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.tempat-padang { border-top-color: var(--senja); }
+.tempat-pinus { border-top-color: var(--pinus); }
+.tempat-waduk { border-top-color: var(--danau); }
+
+.tempat .card-img-top {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.tempat .card-title {
+  color: var(--tinta);
+  font-weight: 700;
+}
+
+.tempat .card-footer {
+  background: transparent;
+  border-top: 1px solid var(--garis);
+  font-size: 0.9rem;
+  color: #3f524d;
+}
+
+/* Form */
+.form-kontak {
+  background: #fff;
+  border: 1px solid var(--garis);
+  border-radius: 0.25rem;
+  padding: 1.75rem;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-control:focus {
+  border-color: var(--danau);
+  box-shadow: 0 0 0 0.25rem rgba(31, 111, 134, 0.25);
+}
+
+#notifikasi:empty {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  background: var(--malam);
+  color: var(--lembayung);
+  padding: 1.75rem 0;
+  font-size: 0.95rem;
+}
+
+html {
+  scroll-padding-top: 4.5rem;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 2.5rem 0 3rem;
+  }
+  .bagian {
+    padding: 3rem 0;
+  }
+}
